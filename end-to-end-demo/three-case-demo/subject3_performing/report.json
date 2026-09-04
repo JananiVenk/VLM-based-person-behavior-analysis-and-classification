@@ -1,0 +1,6051 @@
+{
+  "case_name": "subject3_performing",
+  "reference_image": "subject3.png",
+  "reference_video": "subject3_performing.mp4",
+  "config": {
+    "search_fps": 4.0,
+    "identity_threshold": 0.2,
+    "max_identity_observations_per_track": 64,
+    "minimum_consensus_faces": 3,
+    "minimum_scores_above_threshold": 2,
+    "minimum_face_dimension": 40,
+    "minimum_face_detector_confidence": 0.6,
+    "similarity_top_k": 3,
+    "appearance_gap_seconds": 1.5,
+    "max_evidence_frames": 48
+  },
+  "num_search_frames": 32,
+  "num_detections": 267,
+  "tracks": {
+    "1": {
+      "track_id": 1,
+      "total_detections": 32,
+      "observations_examined": 32,
+      "faces_detected": 32,
+      "eligible_faces": 32,
+      "rejected_no_face": 0,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [
+        0.6968,
+        0.6891,
+        0.6817
+      ],
+      "selected_timestamps": [
+        1.5,
+        0.5,
+        1.25
+      ],
+      "aggregate_score": 0.6892,
+      "matched": true,
+      "decision_reason": "matched_consensus",
+      "entries": [
+        {
+          "timestamp": 0.0,
+          "bbox": [
+            271,
+            2,
+            1048,
+            716
+          ],
+          "confidence": 0.9031,
+          "examined": true,
+          "similarity": 0.6475,
+          "face_w": 149.1,
+          "face_h": 200.8,
+          "det_conf": 0.832,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t0.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t0.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 0.25,
+          "bbox": [
+            266,
+            3,
+            1045,
+            718
+          ],
+          "confidence": 0.8847,
+          "examined": true,
+          "similarity": 0.6607,
+          "face_w": 147.9,
+          "face_h": 199.3,
+          "det_conf": 0.863,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t0.25_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t0.25_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 0.5,
+          "bbox": [
+            263,
+            3,
+            1039,
+            715
+          ],
+          "confidence": 0.9062,
+          "examined": true,
+          "similarity": 0.6891,
+          "face_w": 145.4,
+          "face_h": 196.9,
+          "det_conf": 0.87,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t0.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t0.50_person.jpg",
+          "selected": true
+        },
+        {
+          "timestamp": 0.75,
+          "bbox": [
+            265,
+            3,
+            1038,
+            717
+          ],
+          "confidence": 0.8986,
+          "examined": true,
+          "similarity": 0.6637,
+          "face_w": 145.8,
+          "face_h": 196.4,
+          "det_conf": 0.862,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t0.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t0.75_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 1.0,
+          "bbox": [
+            273,
+            3,
+            1025,
+            716
+          ],
+          "confidence": 0.8706,
+          "examined": true,
+          "similarity": 0.6463,
+          "face_w": 143.4,
+          "face_h": 193.3,
+          "det_conf": 0.888,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t1.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t1.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 1.25,
+          "bbox": [
+            279,
+            3,
+            1016,
+            716
+          ],
+          "confidence": 0.8913,
+          "examined": true,
+          "similarity": 0.6817,
+          "face_w": 143.8,
+          "face_h": 197.9,
+          "det_conf": 0.872,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t1.25_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t1.25_person.jpg",
+          "selected": true
+        },
+        {
+          "timestamp": 1.5,
+          "bbox": [
+            281,
+            4,
+            957,
+            711
+          ],
+          "confidence": 0.8307,
+          "examined": true,
+          "similarity": 0.6968,
+          "face_w": 140.9,
+          "face_h": 196.8,
+          "det_conf": 0.838,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t1.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t1.50_person.jpg",
+          "selected": true
+        },
+        {
+          "timestamp": 1.75,
+          "bbox": [
+            273,
+            5,
+            889,
+            710
+          ],
+          "confidence": 0.8347,
+          "examined": true,
+          "similarity": 0.6717,
+          "face_w": 142.4,
+          "face_h": 200.2,
+          "det_conf": 0.855,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t1.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t1.75_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 2.0,
+          "bbox": [
+            265,
+            5,
+            953,
+            710
+          ],
+          "confidence": 0.7184,
+          "examined": true,
+          "similarity": 0.6424,
+          "face_w": 146.5,
+          "face_h": 199.6,
+          "det_conf": 0.795,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t2.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t2.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 2.25,
+          "bbox": [
+            261,
+            4,
+            977,
+            710
+          ],
+          "confidence": 0.6938,
+          "examined": true,
+          "similarity": 0.6699,
+          "face_w": 145.3,
+          "face_h": 200.8,
+          "det_conf": 0.871,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t2.25_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t2.25_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 2.5,
+          "bbox": [
+            259,
+            9,
+            892,
+            710
+          ],
+          "confidence": 0.8474,
+          "examined": true,
+          "similarity": 0.6575,
+          "face_w": 143.5,
+          "face_h": 201.0,
+          "det_conf": 0.835,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t2.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t2.50_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 2.75,
+          "bbox": [
+            259,
+            9,
+            878,
+            711
+          ],
+          "confidence": 0.8504,
+          "examined": true,
+          "similarity": 0.5929,
+          "face_w": 144.1,
+          "face_h": 199.6,
+          "det_conf": 0.888,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t2.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t2.75_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 3.0,
+          "bbox": [
+            257,
+            11,
+            978,
+            714
+          ],
+          "confidence": 0.801,
+          "examined": true,
+          "similarity": 0.5884,
+          "face_w": 146.3,
+          "face_h": 200.5,
+          "det_conf": 0.849,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t3.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t3.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 3.25,
+          "bbox": [
+            256,
+            19,
+            1013,
+            714
+          ],
+          "confidence": 0.8044,
+          "examined": true,
+          "similarity": 0.6014,
+          "face_w": 147.4,
+          "face_h": 201.8,
+          "det_conf": 0.831,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t3.25_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t3.25_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 3.5,
+          "bbox": [
+            254,
+            15,
+            1024,
+            705
+          ],
+          "confidence": 0.8103,
+          "examined": true,
+          "similarity": 0.5482,
+          "face_w": 149.6,
+          "face_h": 201.1,
+          "det_conf": 0.882,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t3.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t3.50_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 3.75,
+          "bbox": [
+            255,
+            23,
+            933,
+            708
+          ],
+          "confidence": 0.8126,
+          "examined": true,
+          "similarity": 0.6559,
+          "face_w": 154.9,
+          "face_h": 206.2,
+          "det_conf": 0.824,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t3.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t3.75_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 4.0,
+          "bbox": [
+            258,
+            33,
+            988,
+            709
+          ],
+          "confidence": 0.8894,
+          "examined": true,
+          "similarity": 0.6336,
+          "face_w": 171.1,
+          "face_h": 201.2,
+          "det_conf": 0.753,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t4.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t4.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 4.25,
+          "bbox": [
+            262,
+            44,
+            1014,
+            710
+          ],
+          "confidence": 0.9114,
+          "examined": true,
+          "similarity": 0.6125,
+          "face_w": 178.6,
+          "face_h": 198.7,
+          "det_conf": 0.679,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t4.25_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t4.25_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 4.5,
+          "bbox": [
+            265,
+            60,
+            1028,
+            711
+          ],
+          "confidence": 0.9182,
+          "examined": true,
+          "similarity": 0.4841,
+          "face_w": 185.0,
+          "face_h": 189.2,
+          "det_conf": 0.741,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t4.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t4.50_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 4.75,
+          "bbox": [
+            268,
+            63,
+            1038,
+            712
+          ],
+          "confidence": 0.895,
+          "examined": true,
+          "similarity": 0.5742,
+          "face_w": 187.7,
+          "face_h": 195.8,
+          "det_conf": 0.78,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t4.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t4.75_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 5.0,
+          "bbox": [
+            269,
+            65,
+            1048,
+            712
+          ],
+          "confidence": 0.9011,
+          "examined": true,
+          "similarity": 0.4831,
+          "face_w": 187.2,
+          "face_h": 197.9,
+          "det_conf": 0.776,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t5.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t5.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 5.25,
+          "bbox": [
+            271,
+            62,
+            1052,
+            711
+          ],
+          "confidence": 0.8928,
+          "examined": true,
+          "similarity": 0.5915,
+          "face_w": 182.4,
+          "face_h": 205.7,
+          "det_conf": 0.818,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t5.25_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t5.25_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 5.5,
+          "bbox": [
+            269,
+            50,
+            1049,
+            711
+          ],
+          "confidence": 0.8713,
+          "examined": true,
+          "similarity": 0.6246,
+          "face_w": 169.4,
+          "face_h": 205.9,
+          "det_conf": 0.836,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t5.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t5.50_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 5.75,
+          "bbox": [
+            265,
+            40,
+            1043,
+            712
+          ],
+          "confidence": 0.8993,
+          "examined": true,
+          "similarity": 0.5945,
+          "face_w": 154.3,
+          "face_h": 210.8,
+          "det_conf": 0.85,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t5.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t5.75_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 6.0,
+          "bbox": [
+            260,
+            40,
+            1041,
+            712
+          ],
+          "confidence": 0.8782,
+          "examined": true,
+          "similarity": 0.5545,
+          "face_w": 153.5,
+          "face_h": 211.1,
+          "det_conf": 0.833,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t6.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t6.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 6.25,
+          "bbox": [
+            258,
+            43,
+            1030,
+            711
+          ],
+          "confidence": 0.9145,
+          "examined": true,
+          "similarity": 0.5209,
+          "face_w": 160.6,
+          "face_h": 213.0,
+          "det_conf": 0.81,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t6.25_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t6.25_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 6.5,
+          "bbox": [
+            260,
+            38,
+            943,
+            712
+          ],
+          "confidence": 0.8873,
+          "examined": true,
+          "similarity": 0.556,
+          "face_w": 157.0,
+          "face_h": 208.3,
+          "det_conf": 0.848,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t6.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t6.50_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            262,
+            40,
+            908,
+            710
+          ],
+          "confidence": 0.8217,
+          "examined": true,
+          "similarity": 0.5617,
+          "face_w": 157.6,
+          "face_h": 204.9,
+          "det_conf": 0.814,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t6.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t6.75_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 7.0,
+          "bbox": [
+            262,
+            43,
+            990,
+            709
+          ],
+          "confidence": 0.8643,
+          "examined": true,
+          "similarity": 0.5021,
+          "face_w": 155.0,
+          "face_h": 201.9,
+          "det_conf": 0.778,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t7.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t7.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 7.25,
+          "bbox": [
+            264,
+            38,
+            936,
+            708
+          ],
+          "confidence": 0.8806,
+          "examined": true,
+          "similarity": 0.5734,
+          "face_w": 149.7,
+          "face_h": 205.1,
+          "det_conf": 0.813,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t7.25_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t7.25_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 7.5,
+          "bbox": [
+            264,
+            42,
+            921,
+            706
+          ],
+          "confidence": 0.8212,
+          "examined": true,
+          "similarity": 0.55,
+          "face_w": 150.2,
+          "face_h": 205.2,
+          "det_conf": 0.798,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t7.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t7.50_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 7.75,
+          "bbox": [
+            265,
+            46,
+            899,
+            705
+          ],
+          "confidence": 0.8347,
+          "examined": true,
+          "similarity": 0.5815,
+          "face_w": 150.4,
+          "face_h": 201.2,
+          "det_conf": 0.815,
+          "reason": "eligible",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t7.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_1/t7.75_person.jpg",
+          "selected": false
+        }
+      ]
+    },
+    "2": {
+      "track_id": 2,
+      "total_detections": 8,
+      "observations_examined": 8,
+      "faces_detected": 1,
+      "eligible_faces": 0,
+      "rejected_no_face": 7,
+      "rejected_too_small": 1,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 0.0,
+          "bbox": [
+            891,
+            250,
+            995,
+            515
+          ],
+          "confidence": 0.8334,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.25,
+          "bbox": [
+            886,
+            254,
+            976,
+            500
+          ],
+          "confidence": 0.8447,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.5,
+          "bbox": [
+            863,
+            258,
+            952,
+            492
+          ],
+          "confidence": 0.8382,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.75,
+          "bbox": [
+            844,
+            265,
+            929,
+            490
+          ],
+          "confidence": 0.8131,
+          "examined": true,
+          "similarity": -0.1012,
+          "face_w": 7.4,
+          "face_h": 9.5,
+          "det_conf": 0.519,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_2/t0.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_2/t0.75_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 1.0,
+          "bbox": [
+            834,
+            265,
+            908,
+            474
+          ],
+          "confidence": 0.8291,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.25,
+          "bbox": [
+            827,
+            267,
+            891,
+            468
+          ],
+          "confidence": 0.7817,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.5,
+          "bbox": [
+            815,
+            274,
+            874,
+            465
+          ],
+          "confidence": 0.7875,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.75,
+          "bbox": [
+            805,
+            275,
+            858,
+            442
+          ],
+          "confidence": 0.6612,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "3": {
+      "track_id": 3,
+      "total_detections": 3,
+      "observations_examined": 3,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 3,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 0.0,
+          "bbox": [
+            67,
+            264,
+            107,
+            412
+          ],
+          "confidence": 0.6794,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.25,
+          "bbox": [
+            57,
+            267,
+            97,
+            416
+          ],
+          "confidence": 0.69,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.5,
+          "bbox": [
+            66,
+            272,
+            109,
+            402
+          ],
+          "confidence": 0.6122,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "4": {
+      "track_id": 4,
+      "total_detections": 11,
+      "observations_examined": 11,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 11,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 0.0,
+          "bbox": [
+            222,
+            277,
+            258,
+            376
+          ],
+          "confidence": 0.6412,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.25,
+          "bbox": [
+            214,
+            281,
+            250,
+            384
+          ],
+          "confidence": 0.7315,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.5,
+          "bbox": [
+            204,
+            283,
+            249,
+            390
+          ],
+          "confidence": 0.5676,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.75,
+          "bbox": [
+            191,
+            288,
+            230,
+            396
+          ],
+          "confidence": 0.5112,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.0,
+          "bbox": [
+            177,
+            288,
+            220,
+            400
+          ],
+          "confidence": 0.5522,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.25,
+          "bbox": [
+            92,
+            293,
+            164,
+            504
+          ],
+          "confidence": 0.7147,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.5,
+          "bbox": [
+            103,
+            288,
+            172,
+            500
+          ],
+          "confidence": 0.7272,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.25,
+          "bbox": [
+            67,
+            281,
+            150,
+            515
+          ],
+          "confidence": 0.8192,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.5,
+          "bbox": [
+            74,
+            278,
+            158,
+            514
+          ],
+          "confidence": 0.8369,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.25,
+          "bbox": [
+            84,
+            278,
+            150,
+            506
+          ],
+          "confidence": 0.7119,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.25,
+          "bbox": [
+            83,
+            282,
+            125,
+            444
+          ],
+          "confidence": 0.532,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "5": {
+      "track_id": 5,
+      "total_detections": 20,
+      "observations_examined": 20,
+      "faces_detected": 2,
+      "eligible_faces": 0,
+      "rejected_no_face": 18,
+      "rejected_too_small": 2,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 0.0,
+          "bbox": [
+            321,
+            275,
+            358,
+            388
+          ],
+          "confidence": 0.6098,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.25,
+          "bbox": [
+            314,
+            279,
+            355,
+            399
+          ],
+          "confidence": 0.7305,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.5,
+          "bbox": [
+            308,
+            278,
+            348,
+            397
+          ],
+          "confidence": 0.6063,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.75,
+          "bbox": [
+            300,
+            280,
+            338,
+            392
+          ],
+          "confidence": 0.5936,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.0,
+          "bbox": [
+            290,
+            281,
+            332,
+            388
+          ],
+          "confidence": 0.603,
+          "examined": true,
+          "similarity": -0.0725,
+          "face_w": 8.2,
+          "face_h": 12.2,
+          "det_conf": 0.554,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_5/t1.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_5/t1.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 1.25,
+          "bbox": [
+            286,
+            280,
+            326,
+            390
+          ],
+          "confidence": 0.7667,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.5,
+          "bbox": [
+            279,
+            284,
+            319,
+            394
+          ],
+          "confidence": 0.6058,
+          "examined": true,
+          "similarity": -0.0534,
+          "face_w": 8.7,
+          "face_h": 12.6,
+          "det_conf": 0.571,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_5/t1.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_5/t1.50_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 1.75,
+          "bbox": [
+            269,
+            289,
+            312,
+            400
+          ],
+          "confidence": 0.7109,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.0,
+          "bbox": [
+            261,
+            288,
+            305,
+            402
+          ],
+          "confidence": 0.7059,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.25,
+          "bbox": [
+            254,
+            286,
+            298,
+            404
+          ],
+          "confidence": 0.8127,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.5,
+          "bbox": [
+            243,
+            286,
+            291,
+            408
+          ],
+          "confidence": 0.698,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.75,
+          "bbox": [
+            236,
+            285,
+            282,
+            411
+          ],
+          "confidence": 0.7098,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.75,
+          "bbox": [
+            202,
+            289,
+            249,
+            455
+          ],
+          "confidence": 0.6415,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.0,
+          "bbox": [
+            177,
+            290,
+            235,
+            473
+          ],
+          "confidence": 0.5539,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.25,
+          "bbox": [
+            180,
+            291,
+            240,
+            476
+          ],
+          "confidence": 0.7357,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.5,
+          "bbox": [
+            191,
+            291,
+            252,
+            471
+          ],
+          "confidence": 0.7836,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.75,
+          "bbox": [
+            184,
+            296,
+            231,
+            450
+          ],
+          "confidence": 0.5666,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.5,
+          "bbox": [
+            165,
+            283,
+            217,
+            471
+          ],
+          "confidence": 0.7056,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.75,
+          "bbox": [
+            169,
+            284,
+            226,
+            471
+          ],
+          "confidence": 0.8057,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.25,
+          "bbox": [
+            160,
+            284,
+            212,
+            455
+          ],
+          "confidence": 0.7115,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "6": {
+      "track_id": 6,
+      "total_detections": 7,
+      "observations_examined": 7,
+      "faces_detected": 6,
+      "eligible_faces": 0,
+      "rejected_no_face": 1,
+      "rejected_too_small": 6,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 0.0,
+          "bbox": [
+            1101,
+            278,
+            1157,
+            428
+          ],
+          "confidence": 0.5966,
+          "examined": true,
+          "similarity": -0.0619,
+          "face_w": 11.9,
+          "face_h": 15.4,
+          "det_conf": 0.744,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_6/t0.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_6/t0.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 0.25,
+          "bbox": [
+            1114,
+            284,
+            1168,
+            435
+          ],
+          "confidence": 0.7071,
+          "examined": true,
+          "similarity": 0.0038,
+          "face_w": 11.8,
+          "face_h": 16.2,
+          "det_conf": 0.767,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_6/t0.25_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_6/t0.25_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 0.5,
+          "bbox": [
+            1127,
+            284,
+            1177,
+            441
+          ],
+          "confidence": 0.7321,
+          "examined": true,
+          "similarity": -0.0548,
+          "face_w": 12.8,
+          "face_h": 16.8,
+          "det_conf": 0.816,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_6/t0.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_6/t0.50_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 0.75,
+          "bbox": [
+            1145,
+            284,
+            1202,
+            452
+          ],
+          "confidence": 0.6677,
+          "examined": true,
+          "similarity": -0.0323,
+          "face_w": 13.2,
+          "face_h": 18.0,
+          "det_conf": 0.802,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_6/t0.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_6/t0.75_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 1.75,
+          "bbox": [
+            1209,
+            288,
+            1257,
+            472
+          ],
+          "confidence": 0.698,
+          "examined": true,
+          "similarity": -0.0409,
+          "face_w": 14.3,
+          "face_h": 17.7,
+          "det_conf": 0.706,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_6/t1.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_6/t1.75_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 2.0,
+          "bbox": [
+            1221,
+            289,
+            1277,
+            483
+          ],
+          "confidence": 0.7133,
+          "examined": true,
+          "similarity": -0.0497,
+          "face_w": 16.4,
+          "face_h": 21.0,
+          "det_conf": 0.738,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_6/t2.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_6/t2.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 2.25,
+          "bbox": [
+            1234,
+            288,
+            1280,
+            490
+          ],
+          "confidence": 0.706,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "7": {
+      "track_id": 7,
+      "total_detections": 19,
+      "observations_examined": 19,
+      "faces_detected": 3,
+      "eligible_faces": 0,
+      "rejected_no_face": 16,
+      "rejected_too_small": 3,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 0.0,
+          "bbox": [
+            292,
+            276,
+            323,
+            373
+          ],
+          "confidence": 0.5124,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.25,
+          "bbox": [
+            285,
+            280,
+            317,
+            377
+          ],
+          "confidence": 0.5786,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.5,
+          "bbox": [
+            278,
+            282,
+            308,
+            379
+          ],
+          "confidence": 0.5466,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.75,
+          "bbox": [
+            267,
+            283,
+            300,
+            383
+          ],
+          "confidence": 0.6463,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.0,
+          "bbox": [
+            259,
+            284,
+            293,
+            385
+          ],
+          "confidence": 0.6643,
+          "examined": true,
+          "similarity": -0.0576,
+          "face_w": 7.4,
+          "face_h": 10.9,
+          "det_conf": 0.571,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_7/t1.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_7/t1.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 1.25,
+          "bbox": [
+            250,
+            284,
+            284,
+            385
+          ],
+          "confidence": 0.6974,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.5,
+          "bbox": [
+            244,
+            289,
+            276,
+            390
+          ],
+          "confidence": 0.5683,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.75,
+          "bbox": [
+            233,
+            299,
+            266,
+            394
+          ],
+          "confidence": 0.5181,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.0,
+          "bbox": [
+            226,
+            292,
+            262,
+            397
+          ],
+          "confidence": 0.5758,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.75,
+          "bbox": [
+            143,
+            296,
+            216,
+            485
+          ],
+          "confidence": 0.7653,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.25,
+          "bbox": [
+            137,
+            293,
+            194,
+            456
+          ],
+          "confidence": 0.5385,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.75,
+          "bbox": [
+            107,
+            281,
+            174,
+            488
+          ],
+          "confidence": 0.7776,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.0,
+          "bbox": [
+            113,
+            281,
+            187,
+            486
+          ],
+          "confidence": 0.693,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.25,
+          "bbox": [
+            124,
+            281,
+            196,
+            485
+          ],
+          "confidence": 0.7811,
+          "examined": true,
+          "similarity": -0.0338,
+          "face_w": 11.2,
+          "face_h": 18.5,
+          "det_conf": 0.538,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_7/t5.25_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_7/t5.25_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 5.5,
+          "bbox": [
+            111,
+            281,
+            176,
+            464
+          ],
+          "confidence": 0.6778,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.75,
+          "bbox": [
+            120,
+            280,
+            177,
+            454
+          ],
+          "confidence": 0.6966,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.0,
+          "bbox": [
+            128,
+            281,
+            193,
+            452
+          ],
+          "confidence": 0.6129,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.25,
+          "bbox": [
+            119,
+            285,
+            176,
+            449
+          ],
+          "confidence": 0.641,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.5,
+          "bbox": [
+            108,
+            283,
+            165,
+            448
+          ],
+          "confidence": 0.6913,
+          "examined": true,
+          "similarity": -0.08,
+          "face_w": 12.4,
+          "face_h": 16.8,
+          "det_conf": 0.501,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_7/t6.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_7/t6.50_person.jpg",
+          "selected": false
+        }
+      ]
+    },
+    "8": {
+      "track_id": 8,
+      "total_detections": 25,
+      "observations_examined": 25,
+      "faces_detected": 1,
+      "eligible_faces": 0,
+      "rejected_no_face": 24,
+      "rejected_too_small": 1,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 0.0,
+          "bbox": [
+            0,
+            275,
+            53,
+            422
+          ],
+          "confidence": 0.5106,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 0.75,
+          "bbox": [
+            1,
+            272,
+            81,
+            510
+          ],
+          "confidence": 0.8083,
+          "examined": true,
+          "similarity": -0.0003,
+          "face_w": 11.5,
+          "face_h": 16.4,
+          "det_conf": 0.53,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_8/t0.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_8/t0.75_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 1.0,
+          "bbox": [
+            21,
+            276,
+            98,
+            514
+          ],
+          "confidence": 0.8397,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.25,
+          "bbox": [
+            47,
+            278,
+            121,
+            504
+          ],
+          "confidence": 0.7788,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.5,
+          "bbox": [
+            71,
+            284,
+            143,
+            500
+          ],
+          "confidence": 0.83,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.75,
+          "bbox": [
+            96,
+            287,
+            165,
+            492
+          ],
+          "confidence": 0.7749,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.0,
+          "bbox": [
+            120,
+            288,
+            184,
+            470
+          ],
+          "confidence": 0.7488,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.25,
+          "bbox": [
+            142,
+            289,
+            204,
+            463
+          ],
+          "confidence": 0.7882,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.5,
+          "bbox": [
+            157,
+            292,
+            219,
+            463
+          ],
+          "confidence": 0.7873,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.75,
+          "bbox": [
+            180,
+            289,
+            238,
+            457
+          ],
+          "confidence": 0.6923,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.0,
+          "bbox": [
+            198,
+            291,
+            252,
+            457
+          ],
+          "confidence": 0.7492,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.25,
+          "bbox": [
+            213,
+            288,
+            270,
+            461
+          ],
+          "confidence": 0.7727,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.5,
+          "bbox": [
+            221,
+            289,
+            284,
+            461
+          ],
+          "confidence": 0.6461,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.75,
+          "bbox": [
+            244,
+            293,
+            298,
+            448
+          ],
+          "confidence": 0.8206,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.0,
+          "bbox": [
+            260,
+            299,
+            311,
+            440
+          ],
+          "confidence": 0.7855,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.25,
+          "bbox": [
+            272,
+            298,
+            323,
+            436
+          ],
+          "confidence": 0.7277,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.5,
+          "bbox": [
+            283,
+            299,
+            334,
+            433
+          ],
+          "confidence": 0.7457,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.75,
+          "bbox": [
+            297,
+            302,
+            342,
+            431
+          ],
+          "confidence": 0.7865,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.0,
+          "bbox": [
+            314,
+            296,
+            361,
+            435
+          ],
+          "confidence": 0.5775,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.5,
+          "bbox": [
+            326,
+            292,
+            378,
+            444
+          ],
+          "confidence": 0.6896,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.75,
+          "bbox": [
+            334,
+            292,
+            385,
+            428
+          ],
+          "confidence": 0.6403,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.0,
+          "bbox": [
+            345,
+            299,
+            392,
+            419
+          ],
+          "confidence": 0.6115,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.25,
+          "bbox": [
+            352,
+            301,
+            397,
+            411
+          ],
+          "confidence": 0.6076,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.5,
+          "bbox": [
+            358,
+            302,
+            401,
+            407
+          ],
+          "confidence": 0.5791,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            368,
+            302,
+            406,
+            406
+          ],
+          "confidence": 0.6424,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "10": {
+      "track_id": 10,
+      "total_detections": 18,
+      "observations_examined": 18,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 18,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 1.0,
+          "bbox": [
+            1204,
+            267,
+            1278,
+            517
+          ],
+          "confidence": 0.7278,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.25,
+          "bbox": [
+            1184,
+            264,
+            1254,
+            507
+          ],
+          "confidence": 0.6488,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.5,
+          "bbox": [
+            1190,
+            279,
+            1252,
+            512
+          ],
+          "confidence": 0.6573,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 1.75,
+          "bbox": [
+            1172,
+            281,
+            1232,
+            499
+          ],
+          "confidence": 0.5712,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.0,
+          "bbox": [
+            1152,
+            281,
+            1214,
+            526
+          ],
+          "confidence": 0.5846,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.25,
+          "bbox": [
+            1113,
+            281,
+            1184,
+            507
+          ],
+          "confidence": 0.6988,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.5,
+          "bbox": [
+            1100,
+            286,
+            1157,
+            500
+          ],
+          "confidence": 0.7423,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.75,
+          "bbox": [
+            1076,
+            286,
+            1130,
+            494
+          ],
+          "confidence": 0.6726,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.0,
+          "bbox": [
+            1058,
+            287,
+            1109,
+            488
+          ],
+          "confidence": 0.7155,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.25,
+          "bbox": [
+            1045,
+            293,
+            1098,
+            489
+          ],
+          "confidence": 0.5938,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.75,
+          "bbox": [
+            1006,
+            296,
+            1053,
+            471
+          ],
+          "confidence": 0.6552,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.0,
+          "bbox": [
+            980,
+            296,
+            1032,
+            466
+          ],
+          "confidence": 0.5512,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.25,
+          "bbox": [
+            972,
+            298,
+            1018,
+            460
+          ],
+          "confidence": 0.6634,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.5,
+          "bbox": [
+            955,
+            301,
+            1009,
+            458
+          ],
+          "confidence": 0.6264,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.0,
+          "bbox": [
+            936,
+            306,
+            981,
+            461
+          ],
+          "confidence": 0.5573,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.25,
+          "bbox": [
+            926,
+            305,
+            972,
+            457
+          ],
+          "confidence": 0.6202,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            803,
+            310,
+            854,
+            447
+          ],
+          "confidence": 0.6309,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.0,
+          "bbox": [
+            796,
+            308,
+            851,
+            449
+          ],
+          "confidence": 0.6772,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "12": {
+      "track_id": 12,
+      "total_detections": 14,
+      "observations_examined": 14,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 14,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 1.75,
+          "bbox": [
+            1119,
+            266,
+            1191,
+            515
+          ],
+          "confidence": 0.7735,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.0,
+          "bbox": [
+            1087,
+            273,
+            1161,
+            510
+          ],
+          "confidence": 0.6905,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.25,
+          "bbox": [
+            1070,
+            276,
+            1137,
+            497
+          ],
+          "confidence": 0.7233,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.5,
+          "bbox": [
+            1040,
+            279,
+            1113,
+            492
+          ],
+          "confidence": 0.7776,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.75,
+          "bbox": [
+            1024,
+            283,
+            1087,
+            490
+          ],
+          "confidence": 0.6237,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.0,
+          "bbox": [
+            1009,
+            283,
+            1067,
+            487
+          ],
+          "confidence": 0.7882,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.25,
+          "bbox": [
+            991,
+            286,
+            1048,
+            474
+          ],
+          "confidence": 0.6964,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.5,
+          "bbox": [
+            979,
+            294,
+            1030,
+            464
+          ],
+          "confidence": 0.6434,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.75,
+          "bbox": [
+            955,
+            299,
+            1013,
+            462
+          ],
+          "confidence": 0.6606,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.0,
+          "bbox": [
+            941,
+            297,
+            993,
+            457
+          ],
+          "confidence": 0.738,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.25,
+          "bbox": [
+            932,
+            300,
+            980,
+            456
+          ],
+          "confidence": 0.7469,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.5,
+          "bbox": [
+            924,
+            303,
+            967,
+            447
+          ],
+          "confidence": 0.6121,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.75,
+          "bbox": [
+            908,
+            305,
+            957,
+            444
+          ],
+          "confidence": 0.6307,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.0,
+          "bbox": [
+            902,
+            308,
+            945,
+            440
+          ],
+          "confidence": 0.5417,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "13": {
+      "track_id": 13,
+      "total_detections": 11,
+      "observations_examined": 11,
+      "faces_detected": 3,
+      "eligible_faces": 0,
+      "rejected_no_face": 8,
+      "rejected_too_small": 3,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 1.75,
+          "bbox": [
+            15,
+            281,
+            64,
+            417
+          ],
+          "confidence": 0.5856,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.25,
+          "bbox": [
+            1,
+            285,
+            72,
+            539
+          ],
+          "confidence": 0.7685,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.5,
+          "bbox": [
+            2,
+            288,
+            89,
+            549
+          ],
+          "confidence": 0.7507,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 2.75,
+          "bbox": [
+            25,
+            288,
+            114,
+            549
+          ],
+          "confidence": 0.7556,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.0,
+          "bbox": [
+            50,
+            289,
+            133,
+            534
+          ],
+          "confidence": 0.8351,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.75,
+          "bbox": [
+            24,
+            283,
+            130,
+            545
+          ],
+          "confidence": 0.8489,
+          "examined": true,
+          "similarity": -0.0846,
+          "face_w": 14.8,
+          "face_h": 23.5,
+          "det_conf": 0.599,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_13/t3.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_13/t3.75_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 4.0,
+          "bbox": [
+            34,
+            281,
+            129,
+            534
+          ],
+          "confidence": 0.7942,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.75,
+          "bbox": [
+            46,
+            282,
+            119,
+            496
+          ],
+          "confidence": 0.8389,
+          "examined": true,
+          "similarity": 0.0583,
+          "face_w": 14.1,
+          "face_h": 22.3,
+          "det_conf": 0.592,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_13/t4.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_13/t4.75_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 5.0,
+          "bbox": [
+            56,
+            280,
+            129,
+            495
+          ],
+          "confidence": 0.6757,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            90,
+            283,
+            149,
+            455
+          ],
+          "confidence": 0.5806,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.75,
+          "bbox": [
+            104,
+            284,
+            188,
+            500
+          ],
+          "confidence": 0.8264,
+          "examined": true,
+          "similarity": -0.0281,
+          "face_w": 12.3,
+          "face_h": 21.0,
+          "det_conf": 0.518,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_13/t7.75_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_13/t7.75_person.jpg",
+          "selected": false
+        }
+      ]
+    },
+    "14": {
+      "track_id": 14,
+      "total_detections": 1,
+      "observations_examined": 1,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 1,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 1.75,
+          "bbox": [
+            935,
+            297,
+            965,
+            377
+          ],
+          "confidence": 0.564,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "20": {
+      "track_id": 20,
+      "total_detections": 15,
+      "observations_examined": 15,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 15,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 3.25,
+          "bbox": [
+            1176,
+            273,
+            1279,
+            552
+          ],
+          "confidence": 0.733,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.5,
+          "bbox": [
+            1171,
+            274,
+            1258,
+            547
+          ],
+          "confidence": 0.6931,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 3.75,
+          "bbox": [
+            1153,
+            289,
+            1237,
+            550
+          ],
+          "confidence": 0.6626,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.5,
+          "bbox": [
+            1090,
+            296,
+            1165,
+            516
+          ],
+          "confidence": 0.7229,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.75,
+          "bbox": [
+            1070,
+            295,
+            1132,
+            500
+          ],
+          "confidence": 0.7223,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.0,
+          "bbox": [
+            1057,
+            300,
+            1110,
+            492
+          ],
+          "confidence": 0.6619,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.25,
+          "bbox": [
+            1042,
+            302,
+            1093,
+            482
+          ],
+          "confidence": 0.7369,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.5,
+          "bbox": [
+            1021,
+            305,
+            1082,
+            496
+          ],
+          "confidence": 0.7107,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.75,
+          "bbox": [
+            1007,
+            305,
+            1065,
+            491
+          ],
+          "confidence": 0.6375,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.0,
+          "bbox": [
+            996,
+            305,
+            1053,
+            474
+          ],
+          "confidence": 0.6391,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.25,
+          "bbox": [
+            983,
+            310,
+            1036,
+            466
+          ],
+          "confidence": 0.7588,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.5,
+          "bbox": [
+            974,
+            310,
+            1023,
+            456
+          ],
+          "confidence": 0.7297,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            954,
+            309,
+            1016,
+            458
+          ],
+          "confidence": 0.6825,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.25,
+          "bbox": [
+            938,
+            306,
+            986,
+            461
+          ],
+          "confidence": 0.5712,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.5,
+          "bbox": [
+            933,
+            308,
+            979,
+            464
+          ],
+          "confidence": 0.6917,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "21": {
+      "track_id": 21,
+      "total_detections": 8,
+      "observations_examined": 8,
+      "faces_detected": 3,
+      "eligible_faces": 0,
+      "rejected_no_face": 5,
+      "rejected_too_small": 3,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 3.5,
+          "bbox": [
+            0,
+            274,
+            64,
+            537
+          ],
+          "confidence": 0.7218,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.0,
+          "bbox": [
+            0,
+            274,
+            40,
+            502
+          ],
+          "confidence": 0.6765,
+          "examined": true,
+          "similarity": 0.0834,
+          "face_w": 12.1,
+          "face_h": 21.5,
+          "det_conf": 0.564,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_21/t4.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_21/t4.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 4.25,
+          "bbox": [
+            0,
+            280,
+            64,
+            498
+          ],
+          "confidence": 0.8324,
+          "examined": true,
+          "similarity": -0.0547,
+          "face_w": 11.6,
+          "face_h": 19.8,
+          "det_conf": 0.531,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_21/t4.25_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_21/t4.25_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 4.5,
+          "bbox": [
+            12,
+            278,
+            76,
+            491
+          ],
+          "confidence": 0.8427,
+          "examined": true,
+          "similarity": -0.0078,
+          "face_w": 11.4,
+          "face_h": 19.6,
+          "det_conf": 0.503,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_21/t4.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_21/t4.50_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 5.5,
+          "bbox": [
+            50,
+            281,
+            106,
+            439
+          ],
+          "confidence": 0.6438,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.75,
+          "bbox": [
+            47,
+            289,
+            102,
+            435
+          ],
+          "confidence": 0.6562,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.5,
+          "bbox": [
+            67,
+            279,
+            112,
+            440
+          ],
+          "confidence": 0.661,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.0,
+          "bbox": [
+            79,
+            281,
+            127,
+            456
+          ],
+          "confidence": 0.5812,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "24": {
+      "track_id": 24,
+      "total_detections": 13,
+      "observations_examined": 13,
+      "faces_detected": 2,
+      "eligible_faces": 0,
+      "rejected_no_face": 11,
+      "rejected_too_small": 2,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 4.0,
+          "bbox": [
+            1087,
+            280,
+            1159,
+            519
+          ],
+          "confidence": 0.5848,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.25,
+          "bbox": [
+            1064,
+            286,
+            1139,
+            518
+          ],
+          "confidence": 0.7715,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.5,
+          "bbox": [
+            1045,
+            289,
+            1113,
+            510
+          ],
+          "confidence": 0.7232,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.75,
+          "bbox": [
+            1027,
+            287,
+            1084,
+            502
+          ],
+          "confidence": 0.6426,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.0,
+          "bbox": [
+            994,
+            290,
+            1063,
+            494
+          ],
+          "confidence": 0.5543,
+          "examined": true,
+          "similarity": 0.0103,
+          "face_w": 10.4,
+          "face_h": 14.8,
+          "det_conf": 0.512,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_24/t5.00_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_24/t5.00_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 5.25,
+          "bbox": [
+            982,
+            290,
+            1043,
+            487
+          ],
+          "confidence": 0.7366,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.5,
+          "bbox": [
+            968,
+            295,
+            1025,
+            477
+          ],
+          "confidence": 0.7218,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.75,
+          "bbox": [
+            951,
+            300,
+            1007,
+            473
+          ],
+          "confidence": 0.6582,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.0,
+          "bbox": [
+            941,
+            300,
+            994,
+            466
+          ],
+          "confidence": 0.7022,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.25,
+          "bbox": [
+            920,
+            307,
+            979,
+            462
+          ],
+          "confidence": 0.6427,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.5,
+          "bbox": [
+            908,
+            304,
+            964,
+            456
+          ],
+          "confidence": 0.5408,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.5,
+          "bbox": [
+            817,
+            307,
+            881,
+            500
+          ],
+          "confidence": 0.7394,
+          "examined": true,
+          "similarity": -0.0581,
+          "face_w": 17.7,
+          "face_h": 24.2,
+          "det_conf": 0.502,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_24/t7.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_24/t7.50_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 7.75,
+          "bbox": [
+            816,
+            305,
+            878,
+            505
+          ],
+          "confidence": 0.6966,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "25": {
+      "track_id": 25,
+      "total_detections": 12,
+      "observations_examined": 12,
+      "faces_detected": 1,
+      "eligible_faces": 0,
+      "rejected_no_face": 11,
+      "rejected_too_small": 1,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 4.5,
+          "bbox": [
+            347,
+            296,
+            397,
+            420
+          ],
+          "confidence": 0.7169,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 4.75,
+          "bbox": [
+            333,
+            293,
+            382,
+            428
+          ],
+          "confidence": 0.5321,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.25,
+          "bbox": [
+            305,
+            295,
+            350,
+            443
+          ],
+          "confidence": 0.6607,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.5,
+          "bbox": [
+            283,
+            293,
+            332,
+            451
+          ],
+          "confidence": 0.579,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.75,
+          "bbox": [
+            254,
+            292,
+            311,
+            476
+          ],
+          "confidence": 0.6926,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.0,
+          "bbox": [
+            229,
+            287,
+            287,
+            498
+          ],
+          "confidence": 0.6597,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.25,
+          "bbox": [
+            207,
+            285,
+            260,
+            507
+          ],
+          "confidence": 0.6313,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.5,
+          "bbox": [
+            178,
+            283,
+            235,
+            516
+          ],
+          "confidence": 0.6108,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            150,
+            284,
+            245,
+            534
+          ],
+          "confidence": 0.7505,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.0,
+          "bbox": [
+            124,
+            282,
+            216,
+            547
+          ],
+          "confidence": 0.6015,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.25,
+          "bbox": [
+            96,
+            279,
+            190,
+            564
+          ],
+          "confidence": 0.7609,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.5,
+          "bbox": [
+            54,
+            278,
+            166,
+            590
+          ],
+          "confidence": 0.7975,
+          "examined": true,
+          "similarity": -0.0457,
+          "face_w": 12.2,
+          "face_h": 24.4,
+          "det_conf": 0.648,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_25/t7.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_25/t7.50_person.jpg",
+          "selected": false
+        }
+      ]
+    },
+    "28": {
+      "track_id": 28,
+      "total_detections": 4,
+      "observations_examined": 4,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 4,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 4.75,
+          "bbox": [
+            891,
+            308,
+            928,
+            437
+          ],
+          "confidence": 0.5966,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.25,
+          "bbox": [
+            894,
+            303,
+            935,
+            439
+          ],
+          "confidence": 0.6954,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.5,
+          "bbox": [
+            892,
+            303,
+            931,
+            440
+          ],
+          "confidence": 0.7573,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.75,
+          "bbox": [
+            885,
+            302,
+            926,
+            440
+          ],
+          "confidence": 0.6256,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "29": {
+      "track_id": 29,
+      "total_detections": 2,
+      "observations_examined": 2,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 2,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 5.0,
+          "bbox": [
+            235,
+            295,
+            294,
+            458
+          ],
+          "confidence": 0.7137,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.25,
+          "bbox": [
+            252,
+            294,
+            308,
+            452
+          ],
+          "confidence": 0.766,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "30": {
+      "track_id": 30,
+      "total_detections": 1,
+      "observations_examined": 1,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 1,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 5.0,
+          "bbox": [
+            359,
+            295,
+            417,
+            418
+          ],
+          "confidence": 0.5907,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "31": {
+      "track_id": 31,
+      "total_detections": 11,
+      "observations_examined": 11,
+      "faces_detected": 1,
+      "eligible_faces": 0,
+      "rejected_no_face": 10,
+      "rejected_too_small": 1,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 5.25,
+          "bbox": [
+            825,
+            305,
+            869,
+            420
+          ],
+          "confidence": 0.5723,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.5,
+          "bbox": [
+            833,
+            304,
+            877,
+            431
+          ],
+          "confidence": 0.6268,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 5.75,
+          "bbox": [
+            838,
+            299,
+            885,
+            449
+          ],
+          "confidence": 0.7291,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.0,
+          "bbox": [
+            841,
+            303,
+            892,
+            466
+          ],
+          "confidence": 0.742,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.25,
+          "bbox": [
+            846,
+            300,
+            904,
+            473
+          ],
+          "confidence": 0.8171,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.5,
+          "bbox": [
+            851,
+            301,
+            912,
+            483
+          ],
+          "confidence": 0.7567,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            859,
+            299,
+            919,
+            487
+          ],
+          "confidence": 0.7531,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.0,
+          "bbox": [
+            865,
+            298,
+            932,
+            495
+          ],
+          "confidence": 0.7428,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.25,
+          "bbox": [
+            871,
+            299,
+            938,
+            507
+          ],
+          "confidence": 0.8116,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.5,
+          "bbox": [
+            876,
+            295,
+            942,
+            507
+          ],
+          "confidence": 0.8306,
+          "examined": true,
+          "similarity": -0.0407,
+          "face_w": 18.2,
+          "face_h": 21.7,
+          "det_conf": 0.56,
+          "reason": "rejected_too_small",
+          "face_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_31/t7.50_face.jpg",
+          "person_crop_path": "/content/demo_assets/subject3_performing/track_scoring/track_31/t7.50_person.jpg",
+          "selected": false
+        },
+        {
+          "timestamp": 7.75,
+          "bbox": [
+            880,
+            296,
+            949,
+            518
+          ],
+          "confidence": 0.8127,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "32": {
+      "track_id": 32,
+      "total_detections": 8,
+      "observations_examined": 8,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 8,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 6.0,
+          "bbox": [
+            1168,
+            307,
+            1272,
+            571
+          ],
+          "confidence": 0.819,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.25,
+          "bbox": [
+            1154,
+            304,
+            1256,
+            565
+          ],
+          "confidence": 0.8092,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.5,
+          "bbox": [
+            1137,
+            298,
+            1215,
+            539
+          ],
+          "confidence": 0.7895,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            1107,
+            303,
+            1179,
+            523
+          ],
+          "confidence": 0.7915,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.0,
+          "bbox": [
+            1090,
+            300,
+            1155,
+            512
+          ],
+          "confidence": 0.7657,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.25,
+          "bbox": [
+            1057,
+            313,
+            1131,
+            508
+          ],
+          "confidence": 0.7371,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.5,
+          "bbox": [
+            1036,
+            308,
+            1106,
+            502
+          ],
+          "confidence": 0.6983,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.75,
+          "bbox": [
+            1022,
+            307,
+            1081,
+            498
+          ],
+          "confidence": 0.7026,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "33": {
+      "track_id": 33,
+      "total_detections": 2,
+      "observations_examined": 2,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 2,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 6.0,
+          "bbox": [
+            911,
+            309,
+            945,
+            434
+          ],
+          "confidence": 0.526,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            911,
+            302,
+            949,
+            455
+          ],
+          "confidence": 0.5766,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "35": {
+      "track_id": 35,
+      "total_detections": 5,
+      "observations_examined": 5,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 5,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 6.25,
+          "bbox": [
+            19,
+            285,
+            73,
+            443
+          ],
+          "confidence": 0.6286,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            2,
+            278,
+            67,
+            527
+          ],
+          "confidence": 0.8302,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.0,
+          "bbox": [
+            9,
+            276,
+            83,
+            541
+          ],
+          "confidence": 0.786,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.25,
+          "bbox": [
+            20,
+            278,
+            98,
+            545
+          ],
+          "confidence": 0.6527,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.75,
+          "bbox": [
+            5,
+            273,
+            99,
+            594
+          ],
+          "confidence": 0.8537,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "37": {
+      "track_id": 37,
+      "total_detections": 5,
+      "observations_examined": 5,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 5,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 6.5,
+          "bbox": [
+            320,
+            295,
+            358,
+            425
+          ],
+          "confidence": 0.6766,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            329,
+            294,
+            369,
+            424
+          ],
+          "confidence": 0.7427,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.0,
+          "bbox": [
+            342,
+            297,
+            381,
+            423
+          ],
+          "confidence": 0.6272,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.25,
+          "bbox": [
+            350,
+            298,
+            393,
+            414
+          ],
+          "confidence": 0.6312,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.75,
+          "bbox": [
+            365,
+            300,
+            404,
+            405
+          ],
+          "confidence": 0.5063,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "38": {
+      "track_id": 38,
+      "total_detections": 2,
+      "observations_examined": 2,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 2,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 6.5,
+          "bbox": [
+            1043,
+            313,
+            1089,
+            440
+          ],
+          "confidence": 0.7219,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            1051,
+            309,
+            1099,
+            443
+          ],
+          "confidence": 0.6652,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "39": {
+      "track_id": 39,
+      "total_detections": 5,
+      "observations_examined": 5,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 5,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            247,
+            287,
+            294,
+            445
+          ],
+          "confidence": 0.8561,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.0,
+          "bbox": [
+            257,
+            287,
+            305,
+            443
+          ],
+          "confidence": 0.7521,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.25,
+          "bbox": [
+            268,
+            287,
+            319,
+            440
+          ],
+          "confidence": 0.7274,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.5,
+          "bbox": [
+            280,
+            291,
+            332,
+            438
+          ],
+          "confidence": 0.7691,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.75,
+          "bbox": [
+            291,
+            289,
+            341,
+            433
+          ],
+          "confidence": 0.7986,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "42": {
+      "track_id": 42,
+      "total_detections": 3,
+      "observations_examined": 3,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 3,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 7.25,
+          "bbox": [
+            212,
+            284,
+            262,
+            447
+          ],
+          "confidence": 0.7413,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.5,
+          "bbox": [
+            223,
+            288,
+            274,
+            431
+          ],
+          "confidence": 0.7718,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        },
+        {
+          "timestamp": 7.75,
+          "bbox": [
+            236,
+            288,
+            284,
+            425
+          ],
+          "confidence": 0.874,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "44": {
+      "track_id": 44,
+      "total_detections": 1,
+      "observations_examined": 1,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 1,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 7.75,
+          "bbox": [
+            1097,
+            311,
+            1153,
+            458
+          ],
+          "confidence": 0.7383,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    },
+    "45": {
+      "track_id": 45,
+      "total_detections": 1,
+      "observations_examined": 1,
+      "faces_detected": 0,
+      "eligible_faces": 0,
+      "rejected_no_face": 1,
+      "rejected_too_small": 0,
+      "rejected_low_confidence": 0,
+      "selected_scores": [],
+      "selected_timestamps": [],
+      "aggregate_score": null,
+      "matched": false,
+      "decision_reason": "insufficient_faces",
+      "entries": [
+        {
+          "timestamp": 7.75,
+          "bbox": [
+            981,
+            314,
+            1026,
+            439
+          ],
+          "confidence": 0.6483,
+          "examined": true,
+          "similarity": null,
+          "face_w": null,
+          "face_h": null,
+          "det_conf": null,
+          "reason": "no_face_detected",
+          "face_crop_path": null,
+          "person_crop_path": null,
+          "selected": false
+        }
+      ]
+    }
+  },
+  "best_track_id": 1,
+  "best_score": 0.6892,
+  "matched_track_ids": [
+    1
+  ],
+  "person_exists": true,
+  "appearances": [
+    {
+      "appearance_id": 1,
+      "start_time": 0.0,
+      "end_time": 8.5,
+      "track_ids": [
+        1
+      ],
+      "num_evidence_frames": 32,
+      "frames": [
+        {
+          "timestamp": 0.0,
+          "bbox": [
+            271,
+            2,
+            1048,
+            716
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0000.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0000.jpg"
+        },
+        {
+          "timestamp": 0.25,
+          "bbox": [
+            266,
+            3,
+            1045,
+            718
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0001.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0001.jpg"
+        },
+        {
+          "timestamp": 0.5,
+          "bbox": [
+            263,
+            3,
+            1039,
+            715
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0002.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0002.jpg"
+        },
+        {
+          "timestamp": 0.75,
+          "bbox": [
+            265,
+            3,
+            1038,
+            717
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0003.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0003.jpg"
+        },
+        {
+          "timestamp": 1.0,
+          "bbox": [
+            273,
+            3,
+            1025,
+            716
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0004.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0004.jpg"
+        },
+        {
+          "timestamp": 1.25,
+          "bbox": [
+            279,
+            3,
+            1016,
+            716
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0005.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0005.jpg"
+        },
+        {
+          "timestamp": 1.5,
+          "bbox": [
+            281,
+            4,
+            957,
+            711
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0006.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0006.jpg"
+        },
+        {
+          "timestamp": 1.75,
+          "bbox": [
+            273,
+            5,
+            889,
+            710
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0007.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0007.jpg"
+        },
+        {
+          "timestamp": 2.0,
+          "bbox": [
+            265,
+            5,
+            953,
+            710
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0008.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0008.jpg"
+        },
+        {
+          "timestamp": 2.25,
+          "bbox": [
+            261,
+            4,
+            977,
+            710
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0009.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0009.jpg"
+        },
+        {
+          "timestamp": 2.5,
+          "bbox": [
+            259,
+            9,
+            892,
+            710
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0010.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0010.jpg"
+        },
+        {
+          "timestamp": 2.75,
+          "bbox": [
+            259,
+            9,
+            878,
+            711
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0011.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0011.jpg"
+        },
+        {
+          "timestamp": 3.0,
+          "bbox": [
+            257,
+            11,
+            978,
+            714
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0012.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0012.jpg"
+        },
+        {
+          "timestamp": 3.25,
+          "bbox": [
+            256,
+            19,
+            1013,
+            714
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0013.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0013.jpg"
+        },
+        {
+          "timestamp": 3.5,
+          "bbox": [
+            254,
+            15,
+            1024,
+            705
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0014.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0014.jpg"
+        },
+        {
+          "timestamp": 3.75,
+          "bbox": [
+            255,
+            23,
+            933,
+            708
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0015.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0015.jpg"
+        },
+        {
+          "timestamp": 4.0,
+          "bbox": [
+            258,
+            33,
+            988,
+            709
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0016.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0016.jpg"
+        },
+        {
+          "timestamp": 4.25,
+          "bbox": [
+            262,
+            44,
+            1014,
+            710
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0017.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0017.jpg"
+        },
+        {
+          "timestamp": 4.5,
+          "bbox": [
+            265,
+            60,
+            1028,
+            711
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0018.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0018.jpg"
+        },
+        {
+          "timestamp": 4.75,
+          "bbox": [
+            268,
+            63,
+            1038,
+            712
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0019.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0019.jpg"
+        },
+        {
+          "timestamp": 5.0,
+          "bbox": [
+            269,
+            65,
+            1048,
+            712
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0020.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0020.jpg"
+        },
+        {
+          "timestamp": 5.25,
+          "bbox": [
+            271,
+            62,
+            1052,
+            711
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0021.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0021.jpg"
+        },
+        {
+          "timestamp": 5.5,
+          "bbox": [
+            269,
+            50,
+            1049,
+            711
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0022.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0022.jpg"
+        },
+        {
+          "timestamp": 5.75,
+          "bbox": [
+            265,
+            40,
+            1043,
+            712
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0023.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0023.jpg"
+        },
+        {
+          "timestamp": 6.0,
+          "bbox": [
+            260,
+            40,
+            1041,
+            712
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0024.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0024.jpg"
+        },
+        {
+          "timestamp": 6.25,
+          "bbox": [
+            258,
+            43,
+            1030,
+            711
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0025.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0025.jpg"
+        },
+        {
+          "timestamp": 6.5,
+          "bbox": [
+            260,
+            38,
+            943,
+            712
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0026.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0026.jpg"
+        },
+        {
+          "timestamp": 6.75,
+          "bbox": [
+            262,
+            40,
+            908,
+            710
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0027.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0027.jpg"
+        },
+        {
+          "timestamp": 7.0,
+          "bbox": [
+            262,
+            43,
+            990,
+            709
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0028.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0028.jpg"
+        },
+        {
+          "timestamp": 7.25,
+          "bbox": [
+            264,
+            38,
+            936,
+            708
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0029.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0029.jpg"
+        },
+        {
+          "timestamp": 7.5,
+          "bbox": [
+            264,
+            42,
+            921,
+            706
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0030.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0030.jpg"
+        },
+        {
+          "timestamp": 7.75,
+          "bbox": [
+            265,
+            46,
+            899,
+            705
+          ],
+          "identity_similarity": null,
+          "track_id": 1,
+          "context_frame_path": "/content/demo_assets/subject3_performing/phase2_inputs/context/appearance_001_0031.jpg",
+          "target_crop_path": "/content/demo_assets/subject3_performing/phase2_inputs/targets/appearance_001_0031.jpg"
+        }
+      ]
+    }
+  ],
+  "phase2": {
+    "activity_description": "The target, a woman, is playing an acoustic guitar on a busy street while looking at the camera and smiling.",
+    "activity_classification": "neutral",
+    "appearances": [
+      {
+        "appearance_id": 1,
+        "start_time": 0.0,
+        "end_time": 8.5,
+        "description": "The target, a woman, is playing an acoustic guitar on a busy street while looking at the camera and smiling.",
+        "classification": "neutral",
+        "confidence": 0.95,
+        "evidence_timestamps": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ]
+      }
+    ]
+  }
+}
