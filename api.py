@@ -6,18 +6,25 @@ import io
 import json
 import re
 import tempfile
-import uuid
 import zipfile
 from pathlib import Path
 from typing import Optional
 
 import pandas as pd
-from fastapi import FastAPI, File, Form, HTTPException, UploadFile
-from fastapi.responses import FileResponse
-
+import streamlit as st
 
 # ---------------------------------------------------------------------------
-# Dataset / manifest helpers
+# Page setup
+# ---------------------------------------------------------------------------
+
+st.set_page_config(
+    page_title="Visual Intelligence",
+    page_icon="🎥",
+    layout="wide",
+)
+
+# ---------------------------------------------------------------------------
+# Dataset / manifest helpers (unchanged from the FastAPI app)
 # ---------------------------------------------------------------------------
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
@@ -247,74 +254,125 @@ except Exception as e:
 else:
     IMPORT_ERROR = None
 
-app = FastAPI(
-    title="Visual Intelligence API",
-    description="Person Recognition → Tracking → Activity Analysis. "
-    "Use POST /upload first to get a session_id, then POST /run/{session_id}, "
-    "then GET /download/{session_id}.",
+
+# ---------------------------------------------------------------------------
+# Session state
+# ---------------------------------------------------------------------------
+# Streamlit reruns the whole script on every interaction, so anything that
+# needs to survive a rerun (the extracted dataset, the last result, etc.)
+# lives in st.session_state instead of the module-level dicts the FastAPI
+# app used (SESSIONS / RESULTS).
+
+if "dataset_root" not in st.session_state:
+    st.session_state.dataset_root = None
+if "dataset_name" not in st.session_state:
+    st.session_state.dataset_name = None
+if "pairs" not in st.session_state:
+    st.session_state.pairs = None
+if "image_count" not in st.session_state:
+    st.session_state.image_count = 0
+if "video_count" not in st.session_state:
+    st.session_state.video_count = 0
+if "result" not in st.session_state:
+    st.session_state.result = None
+if "uploaded_zip_name" not in st.session_state:
+    st.session_state.uploaded_zip_name = None
+
+
+# ---------------------------------------------------------------------------
+# UI
+# ---------------------------------------------------------------------------
+
+st.title("🎥 Visual Intelligence")
+st.caption(
+    "Person Recognition → Tracking → Activity Analysis. "
+    "Upload a dataset, run the pipeline, review results, download everything."
 )
 
-# session_id -> dataset_root (Path)
-SESSIONS: dict[str, Path] = {}
+if IMPORT_ERROR:
+    st.warning(
+        f"Pipeline package `visual_intelligence` is not importable in this "
+        f"environment, so **Run pipeline** will fail until it's installed. "
+        f"You can still upload and validate a dataset.\n\n"
+        f"Import error: `{IMPORT_ERROR}`"
+    )
 
-# session_id -> most recent run_batch() result
-RESULTS: dict[str, dict] = {}
+# --- Step 1: Upload -----------------------------------------------------
 
+st.header("1. Upload dataset")
+st.write(
+    "ZIP must contain a `query/` folder (reference images), a `video/` "
+    "folder, and a `manifest.csv` with `query_image` and `video` columns."
+)
 
-@app.post("/upload", summary="Upload a dataset ZIP (query/, video/, manifest.csv)")
-async def upload(file: UploadFile = File(...)):
-    if not file.filename.lower().endswith(".zip"):
-        raise HTTPException(400, "Please upload a .zip file.")
+uploaded_file = st.file_uploader("Dataset ZIP", type=["zip"])
 
+if uploaded_file is not None and uploaded_file.name != st.session_state.uploaded_zip_name:
+    # New file uploaded (or first upload this session) -> extract + validate.
     temp_dir = Path(tempfile.mkdtemp(prefix="vi_"))
     zip_path = temp_dir / "upload.zip"
-    zip_path.write_bytes(await file.read())
+    zip_path.write_bytes(uploaded_file.getvalue())
 
     extract_dir = temp_dir / "extracted"
     extract_dir.mkdir()
+
     try:
         safe_extract(zip_path, extract_dir)
     except Exception as e:
-        raise HTTPException(400, f"Could not extract ZIP: {e}")
+        st.error(f"Could not extract ZIP: {e}")
+        st.stop()
 
     dataset_root = find_dataset_root(extract_dir)
     if dataset_root is None:
-        raise HTTPException(400, "ZIP must contain query/, video/, and manifest.csv.")
+        st.error("ZIP must contain query/, video/, and manifest.csv.")
+        st.stop()
 
     df, manifest, errors = process_manifest(dataset_root)
     if errors:
-        raise HTTPException(422, "; ".join(errors))
-
-    session_id = str(uuid.uuid4())
-    SESSIONS[session_id] = dataset_root
+        st.error("Problems found in manifest.csv:\n\n" + "\n".join(f"- {e}" for e in errors))
+        st.stop()
 
     query_dir, video_dir = dataset_root / "query", dataset_root / "video"
 
-    return {
-        "session_id": session_id,
-        "dataset_name": dataset_root.name,
-        "image_count": len([p for p in query_dir.iterdir() if p.is_file()]),
-        "video_count": len([p for p in video_dir.iterdir() if p.is_file()]),
-        "pairs": manifest["items"],
-        "pipeline_available": IMPORT_ERROR is None,
-        "pipeline_import_error": IMPORT_ERROR,
-    }
+    # Reset everything tied to the previous dataset.
+    st.session_state.dataset_root = dataset_root
+    st.session_state.dataset_name = dataset_root.name
+    st.session_state.pairs = manifest["items"]
+    st.session_state.image_count = len([p for p in query_dir.iterdir() if p.is_file()])
+    st.session_state.video_count = len([p for p in video_dir.iterdir() if p.is_file()])
+    st.session_state.uploaded_zip_name = uploaded_file.name
+    st.session_state.result = None
 
+if st.session_state.dataset_root is not None:
+    c1, c2, c3 = st.columns(3)
+    c1.metric("Dataset", st.session_state.dataset_name)
+    c2.metric("Query images", st.session_state.image_count)
+    c3.metric("Videos", st.session_state.video_count)
 
-@app.post("/run/{session_id}", summary="Run Phase 1 + Phase 2 for a previously uploaded session")
-def run(
-    session_id: str,
-    search_fps: float = Form(2.0),
-    identity_threshold: float = Form(0.4),
-    max_evidence_frames: int = Form(48),
-    keep_artifacts: bool = Form(True),
-):
-    if IMPORT_ERROR:
-        raise HTTPException(500, f"Pipeline unavailable: {IMPORT_ERROR}")
+    st.dataframe(pd.DataFrame(st.session_state.pairs), use_container_width=True)
 
-    dataset_root = SESSIONS.get(session_id)
-    if dataset_root is None:
-        raise HTTPException(404, "Unknown session_id. Upload a dataset first.")
+# --- Step 2: Configure + run ---------------------------------------------
+
+st.header("2. Configure & run")
+
+col1, col2, col3 = st.columns(3)
+with col1:
+    search_fps = st.number_input("Search FPS", min_value=0.1, max_value=30.0, value=2.0, step=0.1)
+with col2:
+    identity_threshold = st.slider("Identity threshold", min_value=0.0, max_value=1.0, value=0.4, step=0.01)
+with col3:
+    max_evidence_frames = st.number_input("Max evidence frames", min_value=1, max_value=500, value=48, step=1)
+
+keep_artifacts = st.checkbox("Keep intermediate artifacts (frames, crops, etc.)", value=True)
+
+run_disabled = st.session_state.dataset_root is None or run_batch is None
+run_clicked = st.button("▶ Run pipeline", type="primary", disabled=run_disabled)
+
+if run_disabled and st.session_state.dataset_root is None:
+    st.info("Upload a dataset above before running the pipeline.")
+
+if run_clicked:
+    dataset_root = st.session_state.dataset_root
 
     config = PipelineConfig(
         phase1=Phase1Config(
@@ -327,27 +385,54 @@ def run(
         keep_artifacts=keep_artifacts,
     )
 
-    try:
-        result = run_batch(
-            manifest_path=dataset_root / "streamlit_manifest.json",
-            output_path=dataset_root / "batch_results.json",
-            debug_output_path=dataset_root / "batch_results.debug.json",
-            config=config,
-        )
-    except Exception as e:
-        raise HTTPException(500, f"Pipeline failed: {e}")
+    with st.spinner("Running Phase 1 (identify) + Phase 2 (understand)..."):
+        try:
+            result = run_batch(
+                manifest_path=dataset_root / "streamlit_manifest.json",
+                output_path=dataset_root / "batch_results.json",
+                debug_output_path=dataset_root / "batch_results.debug.json",
+                config=config,
+            )
+        except Exception as e:
+            st.error(f"Pipeline failed: {e}")
+            st.stop()
 
-    RESULTS[session_id] = result
-    return result
+    st.session_state.result = result
+    st.success("Pipeline run complete.")
 
+# --- Step 3: Results -------------------------------------------------------
 
-@app.get("/download/{session_id}", summary="Download a ZIP of manifest + results + artifacts")
-def download(session_id: str):
-    dataset_root = SESSIONS.get(session_id)
-    if dataset_root is None:
-        raise HTTPException(404, "Unknown session_id.")
+if st.session_state.result is not None:
+    st.header("3. Results")
 
-    zip_bytes = create_results_zip(dataset_root)
-    out_path = dataset_root / "results.zip"
-    out_path.write_bytes(zip_bytes)
-    return FileResponse(out_path, filename="visual_intelligence_results.zip")
+    result = st.session_state.result
+    items = result.get("items") if isinstance(result, dict) else None
+
+    if items:
+        rows = []
+        for item in items:
+            rows.append(
+                {
+                    "case_id": item.get("case_id"),
+                    "person_exists": item.get("person_exists"),
+                    "activity_classification": item.get("activity_classification"),
+                    "activity_description": item.get("activity_description"),
+                }
+            )
+        st.dataframe(pd.DataFrame(rows), use_container_width=True)
+
+        with st.expander("Raw result JSON"):
+            st.json(result)
+    else:
+        st.json(result)
+
+    # --- Step 4: Download ---------------------------------------------
+
+    st.header("4. Download")
+    zip_bytes = create_results_zip(st.session_state.dataset_root)
+    st.download_button(
+        label="⬇ Download results ZIP",
+        data=zip_bytes,
+        file_name="visual_intelligence_results.zip",
+        mime="application/zip",
+    )
