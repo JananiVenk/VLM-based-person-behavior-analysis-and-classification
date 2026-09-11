@@ -196,11 +196,6 @@ finding rather than a guess:
   remain undisturbed.
 - **Evidence-based analysis** — every classification is linked to a
   specific sequence of evidence frames.
-- **Fair use** — the VLM is prompted to describe only what is visible,
-  never to infer intent or guess identity.
-- **Safety** — the system is a decision-support tool for a human analyst,
-  not an autonomous decision-maker; the consequential decision is always
-  made by a person.
 
 ## Limitations
 
@@ -227,10 +222,3 @@ tuned against these same datasets.
 - Run a formal fairness audit and legal/compliance review before any
   deployment.
 - Pilot with human analysts reviewing every flagged case.
-
-## Responsible use note
-
-This pipeline is built as a **decision-support research/portfolio tool**
-for prioritizing footage for human review — not as an autonomous
-identification or decision-making system. A human analyst makes the
-consequential call in every case.
