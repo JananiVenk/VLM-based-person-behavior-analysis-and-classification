@@ -12,3 +12,7 @@ torchvision>=0.19
 transformers>=4.57
 accelerate>=1.0
 qwen-vl-utils>=0.0.14
+
+# App
+streamlit>=1.38
+pandas>=2.2
